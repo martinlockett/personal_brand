@@ -11,9 +11,29 @@ Martin Lockett's personal brand repository. It contains two things:
 
 There is no build system, no package.json, no bundler. Everything is static HTML + vanilla CSS + JSX loaded via CDN script tags.
 
+## Build
+
+```bash
+npm install        # first time only
+npm run build      # bundles components → design-system/_ds_bundle.js + _site_bundle.js
+npm run watch      # rebuild on save during development
+```
+
+Both bundles are gitignored — run `npm run build` after cloning before opening the UI kit.
+
 ## Running the UI kit
 
-Open `design-system/ui_kits/personal-site/index.html` directly in a browser. It loads React from CDN and expects a `_ds_bundle.js` at `../../_ds_bundle.js` (two levels up from the UI kit dir, i.e. at `design-system/_ds_bundle.js`) to populate `window.MartinLockettDesignSystem_2039f1`. Guideline specimen pages in `design-system/guidelines/` are self-contained and open directly.
+```bash
+npm run build
+npx serve design-system -p 3456
+# open http://localhost:3456/ui_kits/personal-site/
+```
+
+**Do not open `index.html` directly** (`file://` is blocked by the browser extension and relative paths break). Always use `serve`.
+
+`serve` must point at `design-system/` (not the repo root). The `<base>` tag in `index.html` fixes path resolution caused by `serve`'s 301 redirect stripping `index.html` from the URL.
+
+Guideline specimen pages (`design-system/guidelines/*.html`) are self-contained and need no build step — open them directly with `open`.
 
 ## Architecture
 

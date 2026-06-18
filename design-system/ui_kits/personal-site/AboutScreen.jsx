@@ -1,5 +1,5 @@
 // AboutScreen — essence, pillars table, principles.
-const { Eyebrow, Rule, Card, Pullquote, Badge } = window.MartinLockettDesignSystem_2039f1;
+import { Eyebrow, Rule, Card, Pullquote, Badge } from '../../components/index.js';
 
 function AboutScreen({ onNavigate }) {
   const wrap = { maxWidth: 'var(--container-text)', margin: '0 auto', padding: '0 var(--gutter)' };
@@ -49,4 +49,4 @@ function AboutScreen({ onNavigate }) {
   );
 }
 
-window.AboutScreen = AboutScreen;
+export { AboutScreen };

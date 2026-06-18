@@ -1,5 +1,5 @@
 // HomeScreen — hero (intro + monogram), pillars, selected writing.
-const { Wordmark, Button, Eyebrow, Badge, Card, Pullquote, Rule, Monogram } = window.MartinLockettDesignSystem_2039f1;
+import { Wordmark, Button, Eyebrow, Badge, Card, Pullquote, Rule, Monogram } from '../../components/index.js';
 
 function PillarRow() {
   const pillars = [
@@ -113,4 +113,4 @@ function HomeScreen({ onOpenEssay, onNavigate }) {
   );
 }
 
-window.HomeScreen = HomeScreen;
+export { HomeScreen };

@@ -1,5 +1,5 @@
 // Footer — ink panel with monogram, motto, and spaced-caps pillars.
-const { Monogram } = window.MartinLockettDesignSystem_2039f1;
+import { Monogram } from '../../components/index.js';
 
 function Footer({ onNavigate }) {
   return (
@@ -34,4 +34,4 @@ function Footer({ onNavigate }) {
   );
 }
 
-window.Footer = Footer;
+export { Footer };

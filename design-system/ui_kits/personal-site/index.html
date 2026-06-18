@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<base href="/ui_kits/personal-site/">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Martin Lockett</title>
 <link rel="stylesheet" href="../../styles.css" />
@@ -11,6 +12,7 @@
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 <script src="../../_ds_bundle.js"></script>
+<script src="../../_site_bundle.js"></script>
 <style>
   html, body { margin: 0; }
   body { background: var(--surface-page); color: var(--text-body); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
@@ -20,13 +22,6 @@
 <body>
 <div id="root"></div>
 <script src="data.js"></script>
-<script type="text/babel" src="Nav.jsx" data-presets="react"></script>
-<script type="text/babel" src="Footer.jsx" data-presets="react"></script>
-<script type="text/babel" src="HomeScreen.jsx" data-presets="react"></script>
-<script type="text/babel" src="WritingScreen.jsx" data-presets="react"></script>
-<script type="text/babel" src="EssayScreen.jsx" data-presets="react"></script>
-<script type="text/babel" src="AboutScreen.jsx" data-presets="react"></script>
-<script type="text/babel" src="ContactScreen.jsx" data-presets="react"></script>
 <script type="text/babel" data-presets="react">
   function App() {
     const [route, setRoute] = React.useState({ name: 'home', essayId: null });

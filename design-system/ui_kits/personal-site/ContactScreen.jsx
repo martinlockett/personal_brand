@@ -1,5 +1,5 @@
 // ContactScreen — calm form. Submits to a quiet confirmation state.
-const { Eyebrow, Input, Button, Card, Rule } = window.MartinLockettDesignSystem_2039f1;
+import { Eyebrow, Input, Button, Card, Rule } from '../../components/index.js';
 
 function ContactScreen() {
   const [sent, setSent] = React.useState(false);
@@ -51,4 +51,4 @@ function ContactScreen() {
   );
 }
 
-window.ContactScreen = ContactScreen;
+export { ContactScreen };

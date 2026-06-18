@@ -1,5 +1,5 @@
 // EssayScreen — a single reading view. Short measure, generous leading.
-const { Eyebrow, Badge, Rule, Button, Pullquote } = window.MartinLockettDesignSystem_2039f1;
+import { Eyebrow, Badge, Rule, Button, Pullquote } from '../../components/index.js';
 
 function EssayScreen({ essayId, onBack, onOpenEssay }) {
   const essays = window.SITE_ESSAYS;
@@ -45,4 +45,4 @@ function EssayScreen({ essayId, onBack, onOpenEssay }) {
   );
 }
 
-window.EssayScreen = EssayScreen;
+export { EssayScreen };

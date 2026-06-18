@@ -1,5 +1,5 @@
 // WritingScreen — index of all essays in a calm list.
-const { Eyebrow, Badge, Rule } = window.MartinLockettDesignSystem_2039f1;
+import { Eyebrow, Badge, Rule } from '../../components/index.js';
 
 function WritingScreen({ onOpenEssay }) {
   const essays = window.SITE_ESSAYS;
@@ -33,4 +33,4 @@ function WritingScreen({ onOpenEssay }) {
   );
 }
 
-window.WritingScreen = WritingScreen;
+export { WritingScreen };

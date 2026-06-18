@@ -1,5 +1,5 @@
 // Nav — quiet top bar: wordmark left, section links right, one brass action.
-const { Wordmark, Button } = window.MartinLockettDesignSystem_2039f1;
+import { Wordmark, Button } from '../../components/index.js';
 
 function Nav({ active, onNavigate }) {
   const links = [
@@ -48,4 +48,4 @@ function Nav({ active, onNavigate }) {
   );
 }
 
-window.Nav = Nav;
+export { Nav };
