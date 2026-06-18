@@ -1,0 +1,80 @@
+/* ── Colour ────────────────────────────────────────────────
+   Martin Lockett palette. Five named brand colours plus a
+   small set of derived tints/shades for surfaces and states.
+   Ratio guide: 60% Parchment / 25% Ink Navy / 10% Slate Teal
+   / 5% Brass. Brass is a seasoning, never a base.
+   ----------------------------------------------------------- */
+:root {
+  /* — Brand core — */
+  --ink-navy:    #1C2B40;  /* primary: depth, intellect */
+  --brass:       #B8843E;  /* accent: the spark — sparing */
+  --slate-teal:  #4A6360;  /* secondary: groundedness */
+  --parchment:   #F3EEE4;  /* light field: paper */
+  --graphite:    #23282E;  /* body text on light */
+
+  /* — Ink Navy ramp — */
+  --ink-navy-700: #14202F;
+  --ink-navy-600: #1C2B40;
+  --ink-navy-500: #2A3D57;
+  --ink-navy-400: #3C5170;
+
+  /* — Brass ramp — */
+  --brass-600: #9E6F30;
+  --brass-500: #B8843E;
+  --brass-400: #C99B5C;
+  --brass-100: #ECDFC9;  /* faint brass wash */
+
+  /* — Slate Teal ramp — */
+  --slate-teal-600: #3C524F;
+  --slate-teal-500: #4A6360;
+  --slate-teal-400: #6B817E;
+
+  /* — Parchment ramp (warm paper neutrals) — */
+  --parchment-0:   #FBF8F2;  /* lightest — raised cards */
+  --parchment-50:  #F3EEE4;  /* base field */
+  --parchment-100: #EAE3D5;  /* sunken / hover on light */
+  --parchment-200: #DED5C3;  /* hairline-on-paper, dividers */
+  --parchment-300: #CBBfa8;  /* stronger rule */
+
+  /* — Graphite ramp (cool dark neutrals) — */
+  --graphite-900: #181C21;
+  --graphite-700: #23282E;
+  --graphite-500: #3A4047;
+  --graphite-300: #6A7077;
+
+  /* ── Semantic aliases ── */
+  /* Surfaces */
+  --surface-page:     var(--parchment-50);
+  --surface-card:     var(--parchment-0);
+  --surface-sunken:   var(--parchment-100);
+  --surface-ink:      var(--ink-navy-600);   /* dark surfaces */
+  --surface-ink-soft: var(--ink-navy-500);
+
+  /* Text */
+  --text-heading:   var(--ink-navy-600);
+  --text-body:      var(--graphite-700);
+  --text-muted:     var(--slate-teal-500);
+  --text-faint:     var(--graphite-300);
+  --text-on-ink:    var(--parchment-50);
+  --text-on-ink-muted: #9AAAB8;
+  --text-accent:    var(--brass-600);
+
+  /* Lines */
+  --rule:           var(--parchment-200);
+  --rule-strong:    var(--parchment-300);
+  --rule-on-ink:    rgba(184,132,62,0.35);
+  --hairline-brass: var(--brass-500);
+
+  /* Interactive / accent */
+  --accent:         var(--brass-500);
+  --accent-hover:   var(--brass-600);
+  --accent-quiet:   var(--slate-teal-500);
+
+  /* Status (kept muted, in-palette where possible) */
+  --positive: #4A6360;
+  --warning:  #B8843E;
+  --critical: #9E4B3B;
+
+  /* Focus ring */
+  --focus-ring: rgba(184,132,62,0.55);
+}

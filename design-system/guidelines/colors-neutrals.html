@@ -1,0 +1,41 @@
+<!-- @dsCard group="Colors" viewport="700x210" name="Neutral ramps & semantics" subtitle="Parchment, Graphite & Ink ramps with semantic surface/text roles" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-body); }
+  .wrap { padding: 22px 28px; display: flex; flex-direction: column; gap: 18px; }
+  .label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate-teal-500); margin-bottom: 7px; }
+  .ramp { display: flex; gap: 6px; }
+  .cell { flex: 1; height: 40px; border-radius: var(--radius-xs); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 4px; font-size: 10px; }
+  .bord { box-shadow: inset 0 0 0 1px var(--rule-strong); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div>
+    <div class="label">Parchment — warm paper neutrals</div>
+    <div class="ramp">
+      <div class="cell bord" style="background:var(--parchment-0);color:var(--text-faint)">0</div>
+      <div class="cell bord" style="background:var(--parchment-50);color:var(--text-faint)">50</div>
+      <div class="cell bord" style="background:var(--parchment-100);color:var(--text-faint)">100</div>
+      <div class="cell" style="background:var(--parchment-200);color:var(--text-faint)">200</div>
+      <div class="cell" style="background:var(--parchment-300);color:var(--graphite-700)">300</div>
+    </div>
+  </div>
+  <div>
+    <div class="label">Graphite & Ink — cool darks</div>
+    <div class="ramp">
+      <div class="cell" style="background:var(--ink-navy-400);color:#fff">navy-400</div>
+      <div class="cell" style="background:var(--ink-navy-500);color:#fff">500</div>
+      <div class="cell" style="background:var(--ink-navy-600);color:#fff">600</div>
+      <div class="cell" style="background:var(--graphite-500);color:#fff">graph-500</div>
+      <div class="cell" style="background:var(--graphite-700);color:#fff">700</div>
+      <div class="cell" style="background:var(--graphite-900);color:#fff">900</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

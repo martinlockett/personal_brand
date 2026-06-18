@@ -1,0 +1,23 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Elevation" subtitle="Warm, soft, low shadows — tinted toward ink" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-body); }
+  .wrap { padding: 28px; display: flex; gap: 30px; align-items: center; }
+  .col { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .box { width: 92px; height: 64px; background: var(--surface-card); border-radius: var(--radius-md); border: 1px solid var(--rule); }
+  .tag { font-size: 11px; color: var(--text-faint); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="col"><div class="box" style="box-shadow:var(--shadow-xs)"></div><div class="tag">xs</div></div>
+  <div class="col"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="tag">sm</div></div>
+  <div class="col"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="tag">md</div></div>
+  <div class="col"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="tag">lg</div></div>
+</div>
+</body>
+</html>

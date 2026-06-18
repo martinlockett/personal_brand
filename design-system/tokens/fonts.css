@@ -1,0 +1,6 @@
+/* ── Webfonts ──────────────────────────────────────────────
+   Fraunces (display serif) + Inter (humanist sans) are the
+   brand's specified typefaces. Both are Google Fonts; loaded
+   here so consumers get them by linking styles.css alone.
+   ----------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&display=swap');

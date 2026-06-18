@@ -1,0 +1,27 @@
+<!-- @dsCard group="Colors" viewport="700x190" name="Brand palette" subtitle="Five named colours — Ink Navy, Brass, Slate Teal, Parchment, Graphite" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-body); }
+  .wrap { padding: 24px 28px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .sw { display: flex; flex-direction: column; gap: 8px; }
+  .chip { height: 72px; border-radius: var(--radius-md); }
+  .name { font-size: 14px; font-weight: 600; color: var(--graphite-700); }
+  .hex { font-size: 12px; color: var(--slate-teal-500); font-variant-numeric: tabular-nums; }
+  .role { font-size: 11px; color: var(--text-faint); line-height: 1.35; }
+  .bord { border: 1px solid var(--rule-strong); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="sw"><div class="chip" style="background:var(--ink-navy)"></div><div class="name">Ink Navy</div><div class="hex">#1C2B40</div><div class="role">Primary · text & dark surfaces</div></div>
+  <div class="sw"><div class="chip" style="background:var(--brass)"></div><div class="name">Brass</div><div class="hex">#B8843E</div><div class="role">Accent · the spark, 5% max</div></div>
+  <div class="sw"><div class="chip" style="background:var(--slate-teal)"></div><div class="name">Slate Teal</div><div class="hex">#4A6360</div><div class="role">Secondary · supporting</div></div>
+  <div class="sw"><div class="chip bord" style="background:var(--parchment)"></div><div class="name">Parchment</div><div class="hex">#F3EEE4</div><div class="role">Light field · paper</div></div>
+  <div class="sw"><div class="chip" style="background:var(--graphite)"></div><div class="name">Graphite</div><div class="hex">#23282E</div><div class="role">Body text on light</div></div>
+</div>
+</body>
+</html>

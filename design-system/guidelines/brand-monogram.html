@@ -1,0 +1,24 @@
+<!-- @dsCard group="Brand" viewport="700x230" name="Monogram & clear space" subtitle="ML mark, brand & monochrome — whitespace is the brand" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-body); }
+  .wrap { padding: 26px 30px; display: flex; align-items: center; gap: 40px; }
+  .clear { position: relative; padding: 28px; }
+  .clear::before { content: ""; position: absolute; inset: 0; border: 1px dashed var(--rule-strong); border-radius: var(--radius-md); }
+  .ink { background: var(--ink-navy-600); padding: 20px; border-radius: var(--radius-md); }
+  .note { max-width: 30ch; font-size: 14px; line-height: 1.55; color: var(--text-muted); }
+  .note b { color: var(--ink-navy-600); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="clear"><img src="../assets/ml-monogram.svg" width="92" height="92" alt="ML monogram" /></div>
+  <div class="ink"><img src="../assets/ml-monogram.svg" width="64" height="64" alt="ML monogram" style="filter:none" /></div>
+  <div class="note"><b>Always give the mark generous clear space.</b> Monochrome must work first; colour is the last layer. Never stretch, outline, or add shadow.</div>
+</div>
+</body>
+</html>

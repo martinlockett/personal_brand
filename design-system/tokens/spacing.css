@@ -1,0 +1,49 @@
+/* ── Spacing, radii, shadows, motion ───────────────────────
+   Quiet, classical surfaces: soft warm shadows, restrained
+   radii, calm easing. Whitespace is the brand.
+   ----------------------------------------------------------- */
+:root {
+  /* Spacing scale (4px base) */
+  --space-0:   0;
+  --space-1:   0.25rem;  /* 4  */
+  --space-2:   0.5rem;   /* 8  */
+  --space-3:   0.75rem;  /* 12 */
+  --space-4:   1rem;     /* 16 */
+  --space-5:   1.5rem;   /* 24 */
+  --space-6:   2rem;     /* 32 */
+  --space-7:   3rem;     /* 48 */
+  --space-8:   4rem;     /* 64 */
+  --space-9:   6rem;     /* 96 */
+  --space-10:  8rem;     /* 128 — section air */
+
+  /* Radii — restrained, paper-soft */
+  --radius-xs:   3px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 999px;
+
+  /* Borders */
+  --border-hairline: 1px;
+  --border-regular:  1.5px;
+
+  /* Shadows — warm, soft, low. Tinted toward ink, never grey-black. */
+  --shadow-xs:  0 1px 2px rgba(28,43,64,0.06);
+  --shadow-sm:  0 2px 6px rgba(28,43,64,0.07);
+  --shadow-md:  0 6px 18px rgba(28,43,64,0.09);
+  --shadow-lg:  0 16px 40px rgba(28,43,64,0.12);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.5);
+
+  /* Motion — calm, considered. No bounce. */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);   /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);  /* @kind other */
+  --dur-fast:   140ms;   /* @kind other */
+  --dur-base:   220ms;   /* @kind other */
+  --dur-slow:   400ms;   /* @kind other */
+
+  /* Layout */
+  --container:       1140px;
+  --container-text:  680px;  /* short measure for reading */
+  --gutter:          var(--space-6);
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Martin Lockett ML monogram">
+
+  <rect x="0" y="0" width="240" height="240" rx="52" fill="#1C2B40"></rect>
+
+  <rect x="16" y="16" width="208" height="208" rx="40" fill="none" stroke="#B8843E" stroke-width="2" opacity="0.85"></rect>
+
+  <text x="120" y="120" text-anchor="middle" dominant-baseline="central" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="118" font-weight="500" letter-spacing="2" fill="#F3EEE4">ML</text>
+</svg>
