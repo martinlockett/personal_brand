@@ -10,7 +10,7 @@ This is the design system for **Martin Lockett's personal brand** — a quiet, d
 
 This system was built from the owner's brand materials. Explore them to design with the brand more faithfully:
 
-- **GitHub — `martinlockett/personal_brand`** (https://github.com/martinlockett/personal_brand/brand) — the canonical brand guide (`Brand Guide.md`), brand sheet, and `ML` monogram. The full source guide is preserved here at `guidelines/brand-guide-source.md`.
+- **GitHub — `martinlockett/personal_brand`** ([https://github.com/martinlockett/personal_brand/brand)](https://github.com/martinlockett/personal_brand/tree/main/brand) — the canonical brand guide (`Brand Guide.md`), brand sheet, and `ML` monogram. The full source guide is preserved here at `guidelines/brand-guide-source.md`.
 - Related repos by the same owner (context only, not used here): `martinlockett/obsidian_theme`, `martinlockett/elevate`.
 
 > **Font note:** The brand specifies **Fraunces** (display serif) and **Inter** (body sans) — both Google Fonts. They're loaded from the Google Fonts CDN in `tokens/fonts.css` rather than self-hosted. If you need offline/self-hosted webfont binaries, send the `.woff2` files and I'll wire up local `@font-face` rules. No substitution was made — these are the brand's actual typefaces.
